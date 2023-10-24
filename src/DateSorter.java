@@ -53,9 +53,6 @@ public class DateSorter {
                 .sorted(Comparator.reverseOrder())
                 .collect(Collectors.toCollection(ArrayList::new));
 
-        System.out.println(monthWithRList);
-        System.out.println(monthWithoutRList);
-
         monthWithRList.addAll(monthWithoutRList);
 
         return monthWithRList;
